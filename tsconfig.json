@@ -1,0 +1,33 @@
+{
+	"//": "This Source Code Form is subject to the terms of the Mozilla Public",
+	"//": "License, v. 2.0. If a copy of the MPL was not distributed with this",
+	"//": "file, You can obtain one at http://mozilla.org/MPL/2.0/.",
+	"//": "",
+	"//": "Copyright (C) 2024 Vladimir Leonidovich. All rights reserved.",
+	"//": "",
+	"//": "[ ](governance): CC-BY-4.0",
+	"//": "",
+	"compilerOptions": {
+		"module": "commonjs",
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "ES2021",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"incremental": true,
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"strictBindCallApply": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"paths": {
+			"promissue/common": ["libs/common/src"],
+			"promissue/common/*": ["libs/common/src/*"]
+		}
+	}
+}

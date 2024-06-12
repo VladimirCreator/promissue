@@ -1,0 +1,32 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+	License, v. 2.0. If a copy of the MPL was not distributed with this
+	file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+	Copyright (C) 2024 Vladimir Leonidovich. All rights reserved.
+-->
+
+<html class="has-background-primary">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{title}}</title>
+		<link rel="icon" type="image/x-icon" href="/public/favicon.icon" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+		/>
+	</head>
+	<body class="has-background-primary-100">
+		{{> header}}
+		{{{body}}}
+		{{> footer}}
+		<script>
+			const modal = document.getElementsByClassName("modal")[0]
+			const openButton = document.querySelector("a.button.is-primary")
+			const closeButton = document.getElementsByClassName("modal-close")[0]
+
+			openButton.addEventListener("click", event => modal.classList.add("is-active"))
+			closeButton.addEventListener("click", event => modal.classList.remove("is-active"))
+		</script>
+	</body>
+</html>

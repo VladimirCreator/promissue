@@ -7,9 +7,15 @@
 	"//": "",
 	"//": "[ ](governance): CC-BY-4.0",
 	"//": "",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-	"name": "Node.js",
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	"moduleFileExtensions": ["js", "json", "ts"],
+	"rootDir": ".",
+	"testEnvironment": "node",
+	"testRegex": ".e2e-spec.ts$",
+	"transform": {
+		"^.+\\.(t|j)s$": "ts-jest"
+	},
+	"moduleNameMapper": {
+		"promissue/common/(.*)": "<rootDir>/../libs/common/src/$1",
+		"promissue/common": "<rootDir>/../libs/common/src"
 	}
 }

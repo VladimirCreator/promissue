@@ -7,9 +7,6 @@
 	"//": "",
 	"//": "[ ](governance): CC-BY-4.0",
 	"//": "",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-	"name": "Node.js",
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
-	}
+	"extends": "./tsconfig.json",
+	"exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }

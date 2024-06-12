@@ -1,0 +1,38 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+	License, v. 2.0. If a copy of the MPL was not distributed with this
+	file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+	Copyright (C) 2024 Vladimir Leonidovich. All rights reserved.
+-->
+
+{{#with issue}}
+	<article class="cell card">
+		<!--<section class="card-header">
+			<h1 class="cadr-header-title">{{heading}}</h1>
+		</section>-->
+		<section class="card-content">
+			<section class="media">
+				<div class="media-left">
+					<figure class="image is-48x48">
+						<img
+							class="is-rounded"
+							width="48"
+							height="48"
+							src="{{contributor.avatarUrl}}"
+						/>
+					</figure>
+				</div>
+				<div class="media-content">
+					<p class="title is-4">{{contributor.name}}</p>
+					<p class="subtitle is-6">{{createdAt}}</p>
+				</div>
+			</section>
+			<div class="content">
+				<p>{{text}}</p>
+			</div>
+		</section>
+		<section class="card-footer" style="display:none;">
+			<p class="card-footer-item">{{reactions}} upvotes</p>
+		</section>
+	</article>
+{{/with}}
